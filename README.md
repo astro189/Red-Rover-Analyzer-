@@ -98,5 +98,5 @@ The soil detection model is a CNN-based sequential model trained on a dataset wi
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/mars-rover-ai.git
-cd mars-rover-ai
+git clone https://github.com/astro189/Red-Rover-Analyzer-.git
+cd Red-Rover-Analyzer
