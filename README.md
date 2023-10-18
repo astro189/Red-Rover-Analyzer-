@@ -6,7 +6,7 @@ Develop a robotic arm capable of autonomously analyzing soil samples and reporti
 <li> Take sample from the section of the box with the soil </li>
 <li> Report back the soil type</li>
 
-## Color-Based Primary Segmentation
+## Color-Based Background Removal
 
 The Mars Rover AI employs a color-based segmentation approach to perform primary segmentation of the Martian soil. The following steps outline the process:
 
@@ -39,7 +39,7 @@ The Mars Rover AI employs a color-based segmentation approach to perform primary
    </p>
    <p align="center"><b>Split channels along with colorbar</b></p>
 
-6. **Mask Generation:** Creating masks in two steps to isolate the region of interest.
+6. **Mask Generation:** Creating masks in two steps to isolate the box from the background.
   <div align="center" style="display: flex; justify-content: space-between;">
         <table>
            <tr>
