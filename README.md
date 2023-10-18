@@ -10,16 +10,18 @@ The Mars Rover AI employs a color-based segmentation approach to perform primary
      ![Picture2](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/eb836333-5a63-465b-8fd3-bd13c1ded284)
 
 2. **RGB to HSV Conversion:** Converting the RGB image to the HSV color space for improved color representation.
+   ![Picture3](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/199fa451-4848-4373-8d17-df905b1f29d4)
 
 3. **Channel Splitting:** Separating the image into HUE, VALUE, and SATURATION channels to identify the range for masking.
+  ![Picture4](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/70c06397-39e8-4d6c-92f7-d4d81146f0dc)
 
-4. **Mask Generation:** Creating masks in two steps to isolate the region of interest.
+5. **Mask Generation:** Creating masks in two steps to isolate the region of interest.
    - *Masked Section 1*
-     ![Masked Section 1](images/masked_section_1.png)
+     ![Picture5](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/00c9a8fa-f97b-46da-be2d-7aab678793ff)
    - *Masked Section 2*
-     ![Masked Section 2](images/masked_section_2.png)
+     ![Picture6](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/f18f7c90-9d29-40b4-bc60-b838d8db19fc)
    - *Combined Image*
-     ![Combined Image](images/combined_image.png)
+     ![Picture7](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/ac5439ee-f1b9-4eea-82a0-1000a8fefd65)
 
 ## Extracting Sand-Filled Region
 
