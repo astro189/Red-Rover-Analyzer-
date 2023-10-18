@@ -10,7 +10,7 @@ Develop a robotic arm capable of autonomously analyzing soil samples and reporti
 
 The Mars Rover AI employs a color-based segmentation approach to perform primary segmentation of the Martian soil. The following steps outline the process:
 
-1. **Histogram Equalization:** Utilizing CLAHE to enhance image quality by addressing overexposure.
+1. **Histogram Equalization:** Utilizing CLAHE to enhance image quality by addressing foggy sections of the image.
 
    <div align="center" style="display: flex; justify-content: space-between;">
         <table>
