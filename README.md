@@ -5,7 +5,7 @@ The Mars Rover AI employs a color-based segmentation approach to perform primary
 
 1. **Histogram Equalization:** Utilizing CLAHE to enhance image quality by addressing overexposure.
    - *Before Histogram Equalization*
-     ![Before Histogram Equalization](![Picture1](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/565cfdbe-19d7-4760-965a-0e2e4500f7c7))
+     ![Picture1](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/565cfdbe-19d7-4760-965a-0e2e4500f7c7)
    - *After Histogram Equalization*
      ![After Histogram Equalization](images/after_histogram_equalization.png)
 
