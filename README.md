@@ -1,13 +1,31 @@
 # Red-Rover-Analyzer-
+### Problem Stament: 
+Develop a robotic arm capable of autonomously analyzing soil samples and reporting various properties
+<h4>List of features required:</h4>
+<li> Identify sand-filled against empty regions in the box</li>
+<li> Take sample from the section of the box with the soil </li>
+<li> Report back the soil type</li>
+
 ## Color-Based Primary Segmentation
 
 The Mars Rover AI employs a color-based segmentation approach to perform primary segmentation of the Martian soil. The following steps outline the process:
 
 1. **Histogram Equalization:** Utilizing CLAHE to enhance image quality by addressing overexposure.
 
-   - Before Histogram Equalization | After Histogram Equalization
-     --- | ---
-     ![Picture1](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/565cfdbe-19d7-4760-965a-0e2e4500f7c7) | ![Picture2](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/eb836333-5a63-465b-8fd3-bd13c1ded284) 
+   <div align="center" style="display: flex; justify-content: space-between;">
+        <table>
+           <tr>
+             <td align="center">
+               <img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Picture1.jpg" alt="Section 1" width="300">
+               <p><b>Before Histogram Equalization</b></p>
+             </td>
+             <td align="center">
+               <img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Picture2.jpg" alt="Section 2" width="300">
+               <p><b>After Histogram Equalization</b></p>
+             </td>
+           </tr>
+      </table>
+  </div>
 
      
 2. **RGB to HSV Conversion:** Converting the RGB image to the HSV color space for improved color representation.
