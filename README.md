@@ -7,8 +7,10 @@ The Mars Rover AI employs a color-based segmentation approach to perform primary
    <p align="center">
   ![Picture1](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/565cfdbe-19d7-4760-965a-0e2e4500f7c7) 
   ![Picture2](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/eb836333-5a63-465b-8fd3-bd13c1ded284)
-  Before Histogram Equalization
-  After Histogram Equalization
+   </p>
+   <p align='center'>
+       Before Histogram Equalization
+       After Histogram Equalization
    </p>
 <!--    - *Before Histogram Equalization*
      ![Picture1](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/565cfdbe-19d7-4760-965a-0e2e4500f7c7)
