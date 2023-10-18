@@ -8,23 +8,38 @@ The Mars Rover AI employs a color-based segmentation approach to perform primary
    - Before Histogram Equalization | After Histogram Equalization
      --- | ---
      ![Picture1](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/565cfdbe-19d7-4760-965a-0e2e4500f7c7) | ![Picture2](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/eb836333-5a63-465b-8fd3-bd13c1ded284) 
+
      
 2. **RGB to HSV Conversion:** Converting the RGB image to the HSV color space for improved color representation.
-   ![Picture3](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/199fa451-4848-4373-8d17-df905b1f29d4)
-   
+   <p align="center">
+     <img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Picture3.jpg" alt="HSV Image" width="300"/>
+   </p>
+   <p align="center" ><b>Image in HSV space</b></p>
 4. **Channel Splitting:** Separating the image into HUE, VALUE, and SATURATION channels to identify the range for masking.
-   <span style="display:block;text-align:center">
-      ![Picture4](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/70c06397-39e8-4d6c-92f7-d4d81146f0dc)
-   </span>
-   <p align="center">Split channels along with colorbar</p>
+   <p align="center">
+     <img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Picture4.jpg" alt="Split channel" width="600"/>
+   </p>
+   <p align="center"><b>Split channels along with colorbar</b></p>
 
 6. **Mask Generation:** Creating masks in two steps to isolate the region of interest.
-   - *Masked Section 1*
-     ![Picture5](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/00c9a8fa-f97b-46da-be2d-7aab678793ff)
-   - *Masked Section 2*
-     ![Picture6](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/f18f7c90-9d29-40b4-bc60-b838d8db19fc)
-   - *Combined Image*
-     ![Picture7](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/ac5439ee-f1b9-4eea-82a0-1000a8fefd65)
+  <div align="center" style="display: flex; justify-content: space-between;">
+        <table>
+           <tr>
+             <td align="center">
+               <img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Picture5.jpg" alt="Section 1" width="300">
+               <p><b>Section 1</b></p>
+             </td>
+             <td align="center">
+               <img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Picture6.jpg" alt="Section 2" width="300">
+               <p><b>Section 2</b></p>
+             </td>
+           </tr>
+      </table>
+  </div>
+  <div align="center" style="display: flex; justify-content: space-between;">
+     <img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Picture7.jpg" alt="Section 2" width="300">
+     <p><b>Combined Image</b></p>
+  </div>
 
 ## Extracting Sand-Filled Region
 
@@ -40,22 +55,18 @@ To extract the sand region, the watershed algorithm is employed. The process inv
 
 5. **Watershed Segmentation:** Applying watershed to segment the regions.
 
-6. **Final Cropped Image:**
-   ![Final Cropped Image](images/final_cropped_image.png)
+6. **Final Cropped Image:** Cropping the unnecessary background
+
+<img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Screenshot%202023-10-19%20000752.png" alt="Flow chart"></img>
 
 ## Soil Detection Model
 
-The soil detection model is a CNN-based sequential model trained on a small dataset with 5 classes. Details include:
-
-- **Dataset:**
-  - Total Images: 156
-  - Training Images: 126
-  - Validation Images: 30
+The soil detection model is a CNN-based sequential model trained on a dataset with 5 classes corresponding to the types of mentioned in the problem statement . Details include:
 
 - **Model Architecture:**
-  - Convolutional Layers
-  - Pooling Layers (Max Pooling)
-  - Fully Connected Layers
+  <p align="center">
+  <img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Model.jpg" alt="Model Architecture" width="600"></img>
+  </p>
 
 - **Hyperparameters:**
   - Batch Size: 10
@@ -68,11 +79,19 @@ The soil detection model is a CNN-based sequential model trained on a small data
 - **Model Training and Validation Performance:**
   - Training Accuracy: 82.23%, Loss: 0.7481
   - Validation Accuracy: 93.33%, Loss: 0.2666
-
-### Model Summary
-![Model Summary](images/model_summary.png)
-
----
+</br>
+  <div align="center" style="display: flex; justify-content: space-between;">
+        <table>
+           <tr>
+             <td align="center">
+               <img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Picture16.jpg" alt="Accuracy Plot" width="300">
+             </td>
+             <td align="center">
+               <img src="https://github.com/astro189/Red-Rover-Analyzer-/blob/main/Images/Picture17.jpg" alt="Loss Plot" width="300">
+             </td>
+           </tr>
+      </table>
+  </div>
 
 ## Usage
 
