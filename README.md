@@ -95,7 +95,7 @@ The soil detection model is a CNN-based sequential model trained on a dataset wi
   - Optimizer: RMSprop
 
 - **Model Training and Validation Performance:**
-  - Training Accuracy: 82.23%, Loss: 0.7481
+  - Training Accuracy: 91.23%, Loss: 0.3581
   - Validation Accuracy: 93.33%, Loss: 0.2666
 </br>
   <div align="center" style="display: flex; justify-content: space-between;">
