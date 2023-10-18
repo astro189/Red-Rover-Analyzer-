@@ -13,7 +13,7 @@ The Mars Rover AI employs a color-based segmentation approach to perform primary
    ![Picture3](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/199fa451-4848-4373-8d17-df905b1f29d4)
    
 4. **Channel Splitting:** Separating the image into HUE, VALUE, and SATURATION channels to identify the range for masking.
-  ![Picture4](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/70c06397-39e8-4d6c-92f7-d4d81146f0dc)
+ <p align="center"> ![Picture4](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/70c06397-39e8-4d6c-92f7-d4d81146f0dc)</p>
 <p align="center">Split channels along with colorbar</p>
 
 6. **Mask Generation:** Creating masks in two steps to isolate the region of interest.
