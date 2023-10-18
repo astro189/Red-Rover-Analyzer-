@@ -4,10 +4,14 @@
 The Mars Rover AI employs a color-based segmentation approach to perform primary segmentation of the Martian soil. The following steps outline the process:
 
 1. **Histogram Equalization:** Utilizing CLAHE to enhance image quality by addressing overexposure.
-   - *Before Histogram Equalization*
+   <p align="center">
+  <img src="![Picture1](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/565cfdbe-19d7-4760-965a-0e2e4500f7c7)" width="400" alt="Before Histogram Equalization">
+  <img src="![Picture2](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/eb836333-5a63-465b-8fd3-bd13c1ded284)" width="400" alt="After Histogram Equalization">
+   </p>
+<!--    - *Before Histogram Equalization*
      ![Picture1](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/565cfdbe-19d7-4760-965a-0e2e4500f7c7)
    - *After Histogram Equalization*
-     ![Picture2](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/eb836333-5a63-465b-8fd3-bd13c1ded284)
+     ![Picture2](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/eb836333-5a63-465b-8fd3-bd13c1ded284) -->
 
 2. **RGB to HSV Conversion:** Converting the RGB image to the HSV color space for improved color representation.
    ![Picture3](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/199fa451-4848-4373-8d17-df905b1f29d4)
@@ -15,7 +19,7 @@ The Mars Rover AI employs a color-based segmentation approach to perform primary
 3. **Channel Splitting:** Separating the image into HUE, VALUE, and SATURATION channels to identify the range for masking.
   ![Picture4](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/70c06397-39e8-4d6c-92f7-d4d81146f0dc)
 
-5. **Mask Generation:** Creating masks in two steps to isolate the region of interest.
+4. **Mask Generation:** Creating masks in two steps to isolate the region of interest.
    - *Masked Section 1*
      ![Picture5](https://github.com/astro189/Red-Rover-Analyzer-/assets/97799598/00c9a8fa-f97b-46da-be2d-7aab678793ff)
    - *Masked Section 2*
